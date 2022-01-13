@@ -225,7 +225,7 @@ def getCallCarMessage(data):
 def getPlayStickerMessage():
     message = dict()
     message["type"] = "sticker"
-    message["stickerId"] = "1988"
+    message["stickerId"] = "1988, 1991" 
     message["packageId"] = "446"
     return message
 
@@ -238,6 +238,10 @@ def getTaipei101LocationMessage():
 
 def getMRTVideoMessage():
     message = dict()
+    message["type"] = "video"
+    message["originalContentUrl"] = 
+    message["previewImageUrl"] = 
+    message["trackingId"] = "track-id"
 
     return message
 
