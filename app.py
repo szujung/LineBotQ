@@ -259,7 +259,11 @@ def getTaipei101ImageMessage(originalContentUrl=F"{end_point}/static/taipei_101.
 
 
 def getImageMessage(originalContentUrl):
-    message = dict()
+    message ={
+    "type": "image",
+    "originalContentUrl": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.taiwan.net.tw%2Fatt%2F1%2Fbig_scenic_spots%2Fpic_7927_32.jpg&imgrefurl=https%3A%2F%2Fwww.taiwan.net.tw%2Fm1.aspx%3FsNo%3D0001090%26id%3D7927&tbnid=3xb-SXo-YOQ6hM&vet=12ahUKEwiq-Lfgh671AhXkJqYKHQVMD-AQMygCegUIARC2AQ..i&docid=yDIrR9hqB4M9nM&w=1280&h=853&q=%E5%8F%B0%E5%8C%97101&hl=zh-TW&ved=2ahUKEwiq-Lfgh671AhXkJqYKHQVMD-AQMygCegUIARC2AQ/original.jpg",
+    "previewImageUrl": "https://https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.taiwan.net.tw%2Fatt%2F1%2Fbig_scenic_spots%2Fpic_7927_32.jpg&imgrefurl=https%3A%2F%2Fwww.taiwan.net.tw%2Fm1.aspx%3FsNo%3D0001090%26id%3D7927&tbnid=3xb-SXo-YOQ6hM&vet=12ahUKEwiq-Lfgh671AhXkJqYKHQVMD-AQMygCegUIARC2AQ..i&docid=yDIrR9hqB4M9nM&w=1280&h=853&q=%E5%8F%B0%E5%8C%97101&hl=zh-TW&ved=2ahUKEwiq-Lfgh671AhXkJqYKHQVMD-AQMygCegUIARC2AQ/preview.jpg"
+}
 
     return message
 
