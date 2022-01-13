@@ -46,7 +46,7 @@ def index():
                 if text == "我的名字":
                     payload["messages"] = [getNameEmojiMessage()]
                 elif text == "位置訊息":
-                    payload["message"] = [getShilinNightMarketLocationMessage()]
+                    payload["messages"] = [getShilinNightMarketLocationMessage()]
                 elif text == "出去玩囉":
                     payload["messages"] = [getPlayStickerMessage()]
                 elif text == "台北101":
