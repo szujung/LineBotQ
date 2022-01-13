@@ -73,7 +73,7 @@ def index():
                                 "template": {
                                   "type": "buttons",
                                   "title": "Menu",
-                                  "imageBackgroundColor": "#E6C3C3"
+                                  "imageBackgroundColor": "#E6C3C3",
                                   "text": "Please select",
                                   "actions": [
                                       {
