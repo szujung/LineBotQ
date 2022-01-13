@@ -259,12 +259,11 @@ def getTaipei101ImageMessage(originalContentUrl=F"{end_point}/static/taipei_101.
 
 
 def getImageMessage(originalContentUrl):
-    message ={
-    "type": "image",
-    "originalContentUrl": "https://github.com/szujung/LineBotQ/blob/main/static/taipei_1.jpeg?raw=true/original.jpg",
-    "previewImageUrl": "https://github.com/szujung/LineBotQ/blob/main/static/taipei_1.jpeg?raw=true/preview.jpg"
-}
-
+    message = dict()
+    message["type"] = "image"
+    message["originalContentUrl"] = originalContentUrl
+    message["previewImageUrl"] = originalContentUrl
+    
     return message
 
 
