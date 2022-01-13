@@ -46,7 +46,7 @@ def index():
                 if text == "我的名字":
                     payload["messages"] = [getNameEmojiMessage()]
                 elif text == "位置訊息":
-                    payload["message"] = [getTaipei101LocationMessage()]
+                    payload["message"] = [getShilinNightMarketLocationMessage()]
                 elif text == "出去玩囉":
                     payload["messages"] = [getPlayStickerMessage()]
                 elif text == "台北101":
@@ -241,6 +241,16 @@ def getTaipei101LocationMessage():
     message["address"] = "No.45, Shifu Rd., Xinyi Dist., Taipei City, Taiwan (R.O.C.)"
     message["latitude"] = 25.03369
     message["longitude"] = 121.564128
+    
+    return message
+
+def getShilinNightMarketLocationMessage():
+    message = dict()
+    message["type"] = "location"
+    message["title"] = "士林夜市"
+    message["address"] = "No.101, Jihe Rd., Shilin Dist., Taipei City 111013, Taiwan (R.O.C.)"
+    message["latitude"] = 25.092822
+    message["longitude"] = 121.519874
     
     return message
 
