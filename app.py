@@ -48,9 +48,9 @@ def index():
                 elif text == "出去玩囉":
                     payload["messages"] = [getPlayStickerMessage()]
                 elif text == "台北101":
-                    payload["messages"] = [getTaipei101ImageMessage()]
+                    payload["messages"] = [getTaipei101ImageMessage(),
 #                                            getTaipei101LocationMessage(),
-#                                            getMRTVideoMessage()]
+                                           getMRTVideoMessage()]
                 elif text == "扣打":
                     payload["messages"] = [
                             {
@@ -223,17 +223,11 @@ def getCallCarMessage(data):
 
 
 def getPlayStickerMessage():
-#     message = dict()
-#     message["type"] = "sticker"
-#     message["stickerId"] = "1988" 
-#     message["packageId"] = "446"
-    message = {
-  "type": "sticker",
-  "packageId": "446",
-  "stickerId": "1988", "type": "sticker",
-  "packageId": "446",
-  "stickerId": "1989"
-}
+    message = dict()
+    message["type"] = "sticker"
+    message["stickerId"] = "1988" 
+    message["packageId"] = "446"
+
     return message
 
 
@@ -246,8 +240,8 @@ def getTaipei101LocationMessage():
 def getMRTVideoMessage():
     message = dict()
     message["type"] = "video"
-    message["originalContentUrl"] = 
-    message["previewImageUrl"] = 
+    message["originalContentUrl"] = F"{end_point}/static/taipei_101_video.mp4"
+    message["previewImageUrl"] = F"{end_point}/static/taipei_101_video.mp4"
     message["trackingId"] = "track-id"
 
     return message
